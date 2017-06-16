@@ -1,8 +1,8 @@
 <?php
 /**
 * @wordpress-plugin
-* Plugin Name: Special Offer Post Type Plugin
-* Plugin URI: http://github.com/shortlist-digital/special-offer-post-type-plugin
+* Plugin Name: WP Special Offer Post Type Plugin
+* Plugin URI: http://github.com/shortlist-digital/wp-special-offer-post-type-plugin
 * Description: A plugin to add special offers
 * Version: 1.0.0
 * Author: Shortlist Studio
@@ -12,11 +12,11 @@
 
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 
-class SpecialOfferPostTypePlugin
+class WpSpecialOfferPostTypePlugin
 {
     public function __construct()
     {
         //
     }
 }
-new SpecialOfferPostTypePlugin();
+new WpSpecialOfferPostTypePlugin();

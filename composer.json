@@ -1,5 +1,5 @@
 {
-    "name": "shortlist-digital/special-offer-post-type-plugin",
+    "name": "shortlist-digital/wp-special-offer-post-type-plugin",
     "description": "A plugin to add special offers",
     "type": "wordpress-plugin",
     "license": "MIT",
@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "SpecialOfferPostTypePlugin\\": "app/"
+            "WpSpecialOfferPostTypePlugin\\": "app/"
         }
     },
     "require": {}
