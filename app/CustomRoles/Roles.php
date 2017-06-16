@@ -1,6 +1,6 @@
 <?php
 
-namespace WpSpecialOfferPlugin\CustomRoles;
+namespace WpSpecialOfferPostTypePlugin\CustomRoles;
 
 class Roles {
 

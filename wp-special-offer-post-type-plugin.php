@@ -12,13 +12,10 @@
 
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 
-use WpSpecialOfferPostTypePlugin\Hooks\BasicDetailsAcf;
-// use WpLongformPlugin\Hooks\SocialMediaAcf;
-// use WpLongformPlugin\Hooks\RelatedContentAcf;
-// use WpLongformPlugin\Hooks\HtmlOverridesAcf;
 use WpSpecialOfferPostTypePlugin\CustomRoles\Roles;
 use WpSpecialOfferPostTypePlugin\CustomPostTypes\SpecialOffer;
-// use WpLongformPlugin\CustomFields\Widgets;
+use WpSpecialOfferPostTypePlugin\CustomFields\LocationTaxonomy;
+use WpSpecialOfferPostTypePlugin\CustomFields\Details;
 
 class WpSpecialOfferPostTypePlugin
 {
@@ -27,14 +24,8 @@ class WpSpecialOfferPostTypePlugin
 		$this->add_hooks();
 		$this->add_roles_and_capabilities();
 		$this->add_post_type();
-		// $this->add_custom_fields();
+		$this->add_custom_fields();
     }
-	private function add_hooks() {
-		(new BasicDetailsAcf)->init();
-	// 	(new SocialMediaAcf)->init();
-	// 	(new RelatedContentAcf)->init();
-	// 	(new HtmlOverridesAcf)->init();
-	}
 
 	private function add_roles_and_capabilities() {
 		(new Roles)->init();
@@ -42,10 +33,11 @@ class WpSpecialOfferPostTypePlugin
 
 	private function add_post_type() {
 		(new SpecialOffer)->init();
+		(new LocationTaxonomy)->init();
 	}
 
-	// private function add_custom_fields() {
-	// 	(new Widgets)->init();
-	// }
+	private function add_custom_fields() {
+		(new Details)->init();
+	}
 }
 new WpSpecialOfferPostTypePlugin();
