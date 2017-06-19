@@ -21,7 +21,6 @@ class WpSpecialOfferPostTypePlugin
 {
     public function __construct()
     {
-		$this->add_hooks();
 		$this->add_roles_and_capabilities();
 		$this->add_post_type();
 		$this->add_custom_fields();
