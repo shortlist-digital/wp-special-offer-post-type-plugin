@@ -68,7 +68,7 @@ class Details {
 						'label' => 'Link destination',
 						'name' => 'link_destination',
 						'type' => 'url',
-						'instructions' => 'What URL do you want thelink to go to? (http://)',
+						'instructions' => 'What URL do you want the link to go to? (http://)',
 						'required' => 1,
 						'wrapper' => array (
 							'width' => '50%',
