@@ -28,7 +28,7 @@ class SpecialOffer {
 				'label'               => __('special offer post', 'text_domain'),
 				'description'         => __('Special offers', 'text_domain'),
 				'labels'              => $labels,
-				'supports'            => array ('thumbnail','revisions','author'),
+				'supports'            => array ('title','thumbnail','revisions','author'),
 				'taxonomies'          => array (),
 				'hierarchical'        => false,
 				'public'              => true,
