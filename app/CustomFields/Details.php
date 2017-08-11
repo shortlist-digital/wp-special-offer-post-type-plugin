@@ -15,13 +15,6 @@ class Details {
 				'title' => 'Special offer details',
 				'fields' => array (
 					array (
-						'key' => $key . '_venue',
-						'label' => 'Venue',
-						'name' => 'venue',
-						'required' => 1,
-						'type' => 'text'
-					),
-					array (
 						'key' => $key . '_branch',
 						'label' => 'Branch',
 						'name' => 'branch',
